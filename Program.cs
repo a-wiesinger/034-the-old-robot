@@ -2,10 +2,6 @@
 
 Robot robot = new Robot();
 
-bool isPowered;
-string moveOne;
-string moveTwo;
-
 // Start collecting input to power up the robot
 Console.WriteLine("Would you like to power on the robot? ");
 Console.Write("Acceptable inputs - 'on' or 'off': ");
@@ -21,14 +17,12 @@ void PowerOnOrOffRobot()
         {
             robot.Commands[0] = new OnCommand();
             Console.WriteLine("Robot powered ON.");
-            isPowered = true;
             break;
         } 
         else if (userInput == "off")
         {
             robot.Commands[0] = new OffCommand();
             Console.WriteLine("Robot powered OFF.");
-            isPowered = false;
             break;
         }
         else
