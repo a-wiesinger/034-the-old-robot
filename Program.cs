@@ -79,8 +79,6 @@ void MoveRobot(int i)
                 break;
         }
     }
-    
-    
 }
 
 robot.Run();
